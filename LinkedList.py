@@ -18,22 +18,14 @@ class LinkedList:
 
     def printL(self):
         current =  self.head
-        my_list = []
+        decimal=0
         while current:
-            my_list.append(current.data) 
+            decimal=decimal*2+ current.data
             current = current.next
-
-        expo = len(my_list)-1
-        decimal = 0
-
-        for i in range(0,len(my_list)):
-            decimal = decimal + my_list[i]*(2**expo)
-            expo=expo-1
-
         print(decimal)
 
 list = LinkedList()
-list.insertAtBegin(0)
+list.insertAtBegin(1)
 list.insertAtBegin(0)
 list.insertAtBegin(1)
 
